@@ -3,14 +3,17 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "C언어_gcc.exe build active file",
-            "command": "gcc",
+            "label": "gcc build active file (exefile, C)",
+            "command": "/usr/bin/gcc",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
             "problemMatcher": [
                 "$gcc"
             ],
@@ -18,30 +21,33 @@
         },
         {
             "type": "shell",
-            "label": "C++언어_g++.exe build active file",
-            "command": "g++",
+            "label": "g++ build active file (exefile, C++)",
+            "command": "/usr/bin/g++",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
             "problemMatcher": [
                 "$gcc"
             ],
             "group": "build"
         },
         {
+            "label": "exefile, C",
             "type": "shell",
-            "label": "Run실행",
             "command": "${fileDirname}/${fileBasenameNoExtension}.exe",
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            }
+            "group": "test"
+        },
+        {
+            "label": "exefile, C++",
+            "type": "shell",
+            "command": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "group": "test",
         }
     ]
 }
