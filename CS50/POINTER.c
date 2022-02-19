@@ -19,6 +19,7 @@ int main(void)
     str1[0] = 'x';
     str2 = "our string";
 
-    printf("%p   %p", str1, str2);
+    printf("%p   %p\n", str1, str2);
 
+    printf("%s    %s", str1, str2);
 }

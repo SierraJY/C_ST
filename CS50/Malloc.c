@@ -14,7 +14,8 @@ int main(void)
 
     for (int i =0; i < n; i++)
     {
-        a2[i] = a1[i];
+        a2[i] = a1[i];     //배열과 포인터의 관계 알기
+
     }
 
     a2[0] = toupper(a2[0]);
