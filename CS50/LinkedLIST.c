@@ -23,7 +23,7 @@
          return 1;
      }
      
-     // n의 number 필드에 1의 값을 저장합니다. “n->number”는 “(*n).numer”와 동일한 의미입니다. 
+     // n의 number 필드에 1의 값을 저장합니다. “n->number”는 “(*n).number”와 동일한 의미입니다. 
      n->number = 1;
      n->next = NULL;
     

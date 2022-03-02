@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "디버깅C++ (lldb) Launch g++ (exefile, C++)",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "g++ build active file (exefile, C++)",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "디버깅C (lldb) Launch gcc (exefile, C)",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "gcc build active file (exefile, C)",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        }
+    ]
+}
